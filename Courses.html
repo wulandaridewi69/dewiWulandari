@@ -29,129 +29,56 @@
         </div>
     </section>
 
-    <section>
-        <div>
-            <div>
-                <img src="/Project/dewiWulandari/assets/progate.png" alt="progate" />
-                <h4>Digitalent Scholarship</h4>
-                <p>2020</p>
-            </div>
-            <div>
-                <h4>The material studied is as follows.</h4>
-                <div class="flex gap-4">
-                    <div>
-                        <h5>HTML5</h5>
-                        <ul>
-                            <li>Introduction to HTML</li>
-                            <li>HTML Page Structure</li>
-                            <li>Text and Headings</li>
-                            <li>Links and Navigation</li>
-                            <li>Images and Media</li>
-                            <li>Lists</li>
-                            <li>Tables</li>
-                            <li>Forms</li>
-                            <li>HTML5 Semantic Elements</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h5>CSS3</h5>
-                        <ul>
-                            <li>Introduction to CSS</li>
-                            <li>Colors and Text Styling</li>
-                            <li>Box Model</li>
-                            <li>Basic Layout</li>
-                            <li>Flexbox Layout</li>
-                            <li>Grid Layout</li>
-                            <li>Advanced Selectors</li>
-                            <li>Responsive Design</li>
-                            <li>Transitions and Animations</li>
-                            <li>CSS Variables</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h5>Project</h5>
-                        <ul>
-                            <li>create landing page <a>(AUTOROOOM)</a></li>
-                        </ul>
-                    </div>
-                </div>
+<!-- Courses Section -->
+<section class="container mx-auto px-6 py-12">
+  <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Courses</h2>
 
-            </div>
-        </div>
+  <div class="grid md:grid-cols-2 gap-8">
 
-        <div>
-            <div>
-                <img src="/Project/dewiWulandari/assets/alterra.png" alt="alterra" />
-                <h4>Alterra Academy</h4>
-                <p>2022</p>
-            </div>
-            <div>
-                <h4>The material studied is as follows.</h4>
-                <div class="flex gap-4">
-                    <div>
-                        <h5>Web fundamentals (beginner level)</h5>
-                        <ul>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h5>Programming foundations (junior level)</h5>
-                        <ul>
-                            <li>JavaScript (ES6+)</li>
-                            <li>Git & GitHub</li>
-                            <li>Tooling basics</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h5>Frontend development (intermediate level)</h5>
-                        <ul>
-                            <li>Advanced javaScript</li>
-                            <li>Web APIs</li>
-                            <li>CSS frameworks</li>
-                            <li>Responsive Design</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="flex gap-4">
-                    <div>
-                        <h5>Modern frontend stack (advanced level)</h5>
-                        <ul>
-                            <li>React.js</li>
-                            <li>React Router</li>
-                            <li>State Management</li>
-                            <li>Testing (Optional but recommended)</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h5>Tooling & deployment (pro level)</h5>
-                        <ul>
-                            <li>Build tools</li>
-                            <li>API integration</li>
-                            <li>Deployment</li>
-                            <li>Security basics</li>
-                        </ul>
-                    </div>
-                     <div>
-                        <h5>Projects</h5>
-                        <ul>
-                            <li><a>Landing page alterra</a></li>
-                            <li><a>Seebooks e-commerce</a></li>
-                            <li><a>Go meet app</a></li>
-                            <li><a>To do list</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h5>Capstone projects (colaboration with backend & QA)</h5>
-                        <ul>
-                            <li><a>MN Room</a></li>
-                        </ul>
-                    </div>
-                </div>
+    <!-- Card 1: Alterra Academy -->
+    <div class="bg-white rounded-2xl shadow-lg p-6 flex items-start space-x-6 hover:shadow-xl transition">
+      <img src="/Project/dewiWulandari/assets/alterra.png" alt="alterra" class="w-24 h-24 object-contain">
+      <div>
+        <h3 class="text-xl font-semibold text-gray-800">Alterra Academy</h3>
+        <p class="text-gray-500">2022</p>
+        <p class="mt-3 text-gray-700 text-sm">
+          <strong>Materials studied:</strong><br>
+          - Web Fundamentals (HTML5, CSS3)<br>
+          - JavaScript (ES6+), Git & GitHub<br>
+          - Responsive Design, Web APIs, CSS Frameworks<br>
+          - React.js, Router, State Management<br>
+          - Tooling, Deployment, Security basics<br>
+        </p>
+        <p class="mt-3 text-gray-600 text-sm">
+          <strong>Projects:</strong> Landing Page Alterra, Seebooks E-commerce, Go Meet App, To-Do List
+        </p>
+        <p class="mt-2 text-gray-600 text-sm">
+          <strong>Capstone:</strong> Collaboration with Backend & QA (MN Room)
+        </p>
+      </div>
+    </div>
 
-            </div>
-        </div>
-    </section>
+    <!-- Card 2: Digitalent Scholarship -->
+    <div class="bg-white rounded-2xl shadow-lg p-6 flex items-start space-x-6 hover:shadow-xl transition">
+       <img src="/Project/dewiWulandari/assets/progate.png" alt="progate" class="w-24 h-24 object-contain">
+      <div>
+        <h3 class="text-xl font-semibold text-gray-800">Digitalent Scholarship</h3>
+        <p class="text-gray-500">2020</p>
+        <p class="mt-3 text-gray-700 text-sm">
+          <strong>Materials studied:</strong><br>
+          - HTML5, CSS3<br>
+          - Page Structure, Text Styling, Box Model<br>
+          - Flexbox, Grid Layout, Advanced Selectors<br>
+        </p>
+        <p class="mt-3 text-gray-600 text-sm">
+          <strong>Project:</strong> Create Landing Page (AUTOROOM)
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
     <!-- footer Section -->
     <section id="footer" class="py-[50px] px-[50px]">

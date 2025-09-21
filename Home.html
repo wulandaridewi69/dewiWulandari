@@ -1,170 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Dewi Wulandari – Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body class="bg-white text-gray-800 font-sans">
-
-    <header class="bg-pink-400 py-2 px-[50px]">
-        <div class="containers mx-auto px-4 text-center flex justify-between">
-            <div class="flex gap-4 items-center text-lg font-bold ">
-                <img src="/Project/dewiWulandari/assets/wanda-logo.png" alt="logo" class="w-[32px] h-auto" />
-                <a href="/Project/dewiWulandari/Academic.html" class="">Academic</a>
-                <a href="/Project/dewiWulandari/Courses.html" class="">Courses</a>
-                <a href="/Project/dewiWulandari/Projects.html" class="">Projects</a>
-            </div>
-            <img src="/Project/dewiWulandari/assets/wanda.jpg" alt="Foto Profil"
-                class="w-32 h-32 rounded-full w-[35px] h-[35px] " />
-        </div>
+  </head>
+  <body class="bg-gray-50 text-gray-900 font-sans">
+    <!-- ===== HEADER / NAVBAR ===== -->
+    <header class="bg-rose-950 text-white shadow-lg sticky top-0 z-50">
+      <div
+        class="container mx-auto flex justify-between items-center px-6 py-4"
+      >
+        <h1 class="text-2xl font-bold tracking-wide">MyPortfolio</h1>
+        <nav class="hidden md:flex space-x-8 text-sm font-medium">
+          <a href="#home" class="hover:text-rose-400 transition">Home</a>
+          <a href="#academic" class="hover:text-rose-400 transition"
+            >Academic</a
+          >
+          <a href="#courses" class="hover:text-rose-400 transition">Courses</a>
+          <a href="#projects" class="hover:text-rose-400 transition"
+            >Projects</a
+          >
+        </nav>
+        <img
+          src="/Project/dewiWulandari/assets/wanda.jpg"
+          alt="Foto Profil"
+          class="w-32 h-32 rounded-full w-[40px] h-auto"
+        />
+      </div>
     </header>
 
+    <!-- ===== HERO ===== -->
     <section
-        class="bg-[url('/Project/dewiWulandari/assets/capadokia.png')] bg-cover bg-center h-[535px] w-[webkit-fill-available]  ">
-        <div class="containers mx-auto p-[190px] text-center">
-            <h3 class="font-bold text-4xl">Hello.</h3>
-            <h1 class="font-bold text-7xl">I'am Wanda</h1>
-            <h3 class="font-bold text-4xl">Front End Engineer</h3>
-            <div class="mt-4 space-x-4 text-xs">
-                <a href="#projects" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Hire
-                    me</a>
-                <a href="#contact" class="border border-blue-600 text-blue-600 px-4 py-2 rounded hover:bg-blue-50">Tech
-                    skills</a>
-                <a href="#contact"
-                    class="border border-blue-600 text-blue-600 px-4 py-2 rounded hover:bg-blue-50">Projects</a>
-                <a href="#contact" class="border border-blue-600 text-blue-600 px-4 py-2 rounded hover:bg-blue-50">Get
-                    in
-                    touch</a>
-            </div>
+      class="relative flex flex-col items-center justify-center text-center py-32 bg-gradient-to-r from-rose-950 via-gray-900 to-sky-950 overflow-hidden"
+    >
+      <h1 class="text-5xl font-extrabold text-white mb-4">
+        Hi, I’m Wanda <span class="animate-waving-hand">👋</span>
+      </h1>
+
+      <p class="text-gray-300 max-w-2xl mb-8">
+        Frontend Engineer with passion for crafting elegant, scalable, and
+        modern web applications.
+      </p>
+
+      <div class="flex gap-4">
+        <a
+          href="#projects"
+          class="px-6 py-3 bg-rose-500 hover:bg-rose-600 text-white font-semibold rounded-lg shadow-lg transition"
+        >
+          View Projects
+        </a>
+        <a
+          href="#contact"
+          class="px-6 py-3 border border-gray-400 hover:border-rose-400 text-white font-semibold rounded-lg transition"
+        >
+          Get In Touch
+        </a>
+      </div>
+
+      <div class="absolute bottom-0 inset-x-0 opacity-10">
+        <img
+          src="/Project/dewiWulandari/assets/rusia.jpg"
+          alt="Rusia"
+          class="mx-auto w-[-webkit-fill-available]"
+        />
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ME ===== -->
+    <section
+      id="about"
+      class="text-center text-lime-100 py-[50px] object-cover rounded-bl-[100px] rounded-br-[100px]"
+    >
+      <div class="containers">
+        <div class="flex gap-6 justify-center pt-[50px] pb-[50px]">
+          <img
+            src="/Project/dewiWulandari/assets/wanda.jpg"
+            alt="Foto Profil"
+            class="w-64 h-64 object-cover rounded-tr-[50px] rounded-bl-[50px]"
+          />
+          <div>
+            <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+            <p class="max-w-xl mx-auto text-gray-600 text-justify">
+              The first time I learned HTML and CSS was during a program
+              organized by Kominfo X Digitalent in 2021. Since then, I became
+              interested in deepening my knowledge in that field and even took a
+              3-month training as a Front End Engineer organized by Alterra
+              Academy. This is because in Indonesia, there are only a few women
+              who are interested in pursuing a career as a Front End Engineer.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section id="space">
-        <div class="py-8"></div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="text-center bg-rose-950 text-lime-100 py-[50px] object-cover rounded-bl-[100px] rounded-br-[100px]">
-        <div class="containers">
-            <div class="flex gap-6 justify-center pt-[50px] pb-[50px]">
-                <img src="/Project/dewiWulandari/assets/wanda.jpg" alt="Foto Profil"
-                    class="w-64 h-64 object-cover rounded-tr-[50px] rounded-bl-[50px]" />
-                <div>
-                    <h2 class="text-2xl font-semibold mb-4">About Me</h2>
-                    <p class="max-w-xl mx-auto text-gray-600 text-justify">
-                        The first time I learned HTML and CSS was during a program organized by Kominfo X Digitalent in
-                        2021. Since then,
-                        I became interested in deepening my knowledge in that field and even took a 3-month training as
-                        a
-                        Front End Engineer
-                        organized by Alterra Academy. This is because in Indonesia, there are only a few women who are
-                        interested in pursuing
-                        a career as a Front End Engineer.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="space">
-        <div class="py-8"></div>
-    </section>
-
-    <!-- Skill Section -->
+    <!-- ===== MY SKILL ===== -->
     <section id="projects" class="text-center flex justify-center pb-[50px]">
-        <div class="containers max-w-fit">
-            <h2 class="text-2xl font-semibold mb-8 text-center">My Work Skill</h2>
-            <p>Here is the tech stack I use to build or create a project in the field of Front End Engineer.</p>
-            <div class="grid grid-cols-1 grid-cols-2 grid-cols-3 grid-cols-4 gap-6 mt-[30px]">
-                <!-- skill Card -->
-                <div class="bg-white shadow rounded p-4 bg-sky-500">
-                    <img src="project1.jpg" alt="html" class="rounded mb-3" />
-                    <p class="text-gray-600 text-sm">70%</p>
-                </div>
-                <div class="bg-white shadow rounded p-4 bg-sky-500">
-                    <img src="project1.jpg" alt="react" class="rounded mb-3" />
-                    <p class="text-gray-600 text-sm">50%</p>
-                </div>
-                <div class="bg-white shadow rounded p-4 bg-sky-500">
-                    <img src="project1.jpg" alt="next" class="rounded mb-3" />
-                    <p class="text-gray-600 text-sm">50%</p>
-                </div>
-                <div class="bg-white shadow rounded p-4 bg-sky-500">
-                    <img src="project1.jpg" alt="javascript" class="rounded mb-3" />
-                    <p class="text-gray-600 text-sm">40%</p>
-                </div>
-                <div class="bg-white shadow rounded p-4 bg-sky-500">
-                    <img src="project1.jpg" alt="jquerry" class="rounded mb-3" />
-                    <p class="text-gray-600 text-sm">40%</p>
-                </div>
-                <div class="bg-white shadow rounded p-4 bg-sky-500">
-                    <img src="project1.jpg" alt="css" class="rounded mb-3" />
-                    <p class="text-gray-600 text-sm">70%</p>
-                </div>
-                <div class="bg-white shadow rounded p-4 bg-sky-500">
-                    <img src="project1.jpg" alt="saas" class="rounded mb-3" />
-                    <p class="text-gray-600 text-sm">50%</p>
-                </div>
-                <div class="bg-white shadow rounded p-4 bg-sky-500">
-                    <img src="project1.jpg" alt="boostrap" class="rounded mb-3" />
-                    <p class="text-gray-600 text-sm">70%</p>
-                </div>
-                <div class="bg-white shadow rounded p-4 bg-sky-500">
-                    <img src="project1.jpg" alt="tailwind" class="rounded mb-3" />
-                    <p class="text-gray-600 text-sm">70%</p>
-                </div>
-                <div class="bg-white shadow rounded p-4 bg-sky-500">
-                    <img src="project1.jpg" alt="figma" class="rounded mb-3" />
-                    <p class="text-gray-600 text-sm">50%</p>
-                </div>
-                <div class="bg-white shadow rounded p-4 bg-sky-500">
-                    <img src="project1.jpg" alt="Rest API" class="rounded mb-3" />
-                    <p class="text-gray-600 text-sm">60%</p>
-                </div>
-                <div class="bg-white shadow rounded p-4 bg-sky-500">
-                    <img src="project1.jpg" alt="responsive" class="rounded mb-3" />
-                    <p class="text-gray-600 text-sm">70%</p>
-                </div>
-                <div class="bg-white shadow rounded p-4 bg-sky-500">
-                    <img src="project1.jpg" alt="git/github" class="rounded mb-3" />
-                    <p class="text-gray-600 text-sm">60%</p>
-                </div>
-                <div class="bg-white shadow rounded p-4 bg-sky-500">
-                    <img src="project1.jpg" alt="seo" class="rounded mb-3" />
-                    <p class="text-gray-600 text-sm">60%</p>
-                </div>
-            </div>
-
+      <div class="containers max-w-fit">
+        <h2 class="text-2xl font-semibold mb-8 text-center">Tech Stack</h2>
+        <p>
+          Here is the tech stack I use to build or create a project in the field
+          of Front End Engineer.
+        </p>
+        <div
+          class="grid grid-cols-1 grid-cols-2 grid-cols-3 grid-cols-4 gap-6 mt-[30px]"
+        >
+          <!-- skill Card -->
+          <div class="bg-white shadow rounded p-4 bg-sky-500">
+            <img src="project1.jpg" alt="html" class="rounded mb-3" />
+            <p class="text-gray-600 text-sm">70%</p>
+          </div>
+          <div class="bg-white shadow rounded p-4 bg-sky-500">
+            <img src="project1.jpg" alt="react" class="rounded mb-3" />
+            <p class="text-gray-600 text-sm">50%</p>
+          </div>
+          <div class="bg-white shadow rounded p-4 bg-sky-500">
+            <img src="project1.jpg" alt="next" class="rounded mb-3" />
+            <p class="text-gray-600 text-sm">50%</p>
+          </div>
+          <div class="bg-white shadow rounded p-4 bg-sky-500">
+            <img src="project1.jpg" alt="javascript" class="rounded mb-3" />
+            <p class="text-gray-600 text-sm">40%</p>
+          </div>
+          <div class="bg-white shadow rounded p-4 bg-sky-500">
+            <img src="project1.jpg" alt="jquerry" class="rounded mb-3" />
+            <p class="text-gray-600 text-sm">40%</p>
+          </div>
+          <div class="bg-white shadow rounded p-4 bg-sky-500">
+            <img src="project1.jpg" alt="css" class="rounded mb-3" />
+            <p class="text-gray-600 text-sm">70%</p>
+          </div>
+          <div class="bg-white shadow rounded p-4 bg-sky-500">
+            <img src="project1.jpg" alt="saas" class="rounded mb-3" />
+            <p class="text-gray-600 text-sm">50%</p>
+          </div>
+          <div class="bg-white shadow rounded p-4 bg-sky-500">
+            <img src="project1.jpg" alt="boostrap" class="rounded mb-3" />
+            <p class="text-gray-600 text-sm">70%</p>
+          </div>
+          <div class="bg-white shadow rounded p-4 bg-sky-500">
+            <img src="project1.jpg" alt="tailwind" class="rounded mb-3" />
+            <p class="text-gray-600 text-sm">70%</p>
+          </div>
+          <div class="bg-white shadow rounded p-4 bg-sky-500">
+            <img src="project1.jpg" alt="figma" class="rounded mb-3" />
+            <p class="text-gray-600 text-sm">50%</p>
+          </div>
+          <div class="bg-white shadow rounded p-4 bg-sky-500">
+            <img src="project1.jpg" alt="Rest API" class="rounded mb-3" />
+            <p class="text-gray-600 text-sm">60%</p>
+          </div>
+          <div class="bg-white shadow rounded p-4 bg-sky-500">
+            <img src="project1.jpg" alt="responsive" class="rounded mb-3" />
+            <p class="text-gray-600 text-sm">70%</p>
+          </div>
+          <div class="bg-white shadow rounded p-4 bg-sky-500">
+            <img src="project1.jpg" alt="git/github" class="rounded mb-3" />
+            <p class="text-gray-600 text-sm">60%</p>
+          </div>
+          <div class="bg-white shadow rounded p-4 bg-sky-500">
+            <img src="project1.jpg" alt="seo" class="rounded mb-3" />
+            <p class="text-gray-600 text-sm">60%</p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- project Section -->
-    <section id="projects" class="text-center flex justify-center bg-rose-950 text-lime-100 py-[50px] object-cover rounded-tl-[-100px] rounded-tr-[100px] rounded-bl-[100px]">
-        <div class="containers max-w-fit">
-            <h2 class="text-2xl font-semibold mb-8 text-center">My Projects</h2>
-            <p>Here is my projects as Front End Engineer based on activities or training that have been conducted.</p>
-            <div class="grid grid-flow-col grid-rows-3 gap-4 mt-[30px] ">
-                <!-- projects Card -->
-                <div class="row-span-3 bg-white shadow rounded">
-                    <img src="/Project/dewiWulandari/assets/progate.png" alt="progate" class="rounded mb-3" />
-                </div>
-                <div class="col-span-2 row-span-2 bg-white shadow rounded">
-                    <img src="/Project/dewiWulandari/assets/alterra.png" alt="alterra" class="rounded mb-3" />
-                </div>
-                <div class="col-span-2 bg-white shadow rounded">
-                    <img src="/Project/dewiWulandari/assets/gloding.png" alt="gloding" class="rounded mb-3" />
-                </div>
-            </div>
-
+    <!-- ===== EKXPERIENCE===== -->
+    <section
+      id="projects"
+      class="text-center flex justify-center bg-rose-950 text-lime-100 py-[50px] object-cover rounded-tl-[-100px] rounded-tr-[100px] rounded-bl-[100px]"
+    >
+      <div class="containers max-w-fit">
+        <h2 class="text-2xl font-semibold mb-8 text-center">My Experience</h2>
+        <p>
+          Here is my projects as Front End Engineer based on activities or
+          training that have been conducted.
+        </p>
+        <div class="grid grid-flow-col grid-rows-3 gap-4 mt-[30px]">
+          <!-- projects Card -->
+          <div class="col-span-2 bg-white shadow rounded">
+            <img
+              src="/Project/dewiWulandari/assets/gloding.png"
+              alt="gloding"
+              class="bg-black pt-[15px] pl-[15px] pr-[15px] pb-[15px] mb-[0] rounded size fit"
+            />
+          </div>
         </div>
+      </div>
     </section>
 
+    <!-- ===== COURSES ===== -->
+    <section
+      id="courses"
+      class="container mx-auto px-6 py-20 bg-gray-100 rounded-3xl"
+    >
+      <h3 class="text-3xl font-bold text-center mb-12">Courses</h3>
+      <div class="grid md:grid-cols-2 gap-10">
+        <!-- Course 1 -->
+        <div
+          class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition"
+        >
+          <div class="flex items-center space-x-4 mb-4">
+            <div
+              class="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center"
+            >
+              <span class="text-rose-500 font-bold text-lg">A</span>
+            </div>
+            <h4 class="text-xl font-semibold text-gray-900">Alterra Academy</h4>
+          </div>
+          <p class="text-gray-600 mb-3">2022 – Advanced Frontend Development</p>
+          <p class="text-gray-700 text-sm">
+            Studied: Web Fundamentals, JavaScript ES6+, Responsive Design,
+            React.js, APIs, Deployment.
+          </p>
+          <p class="mt-3 text-gray-600 text-sm">
+            <strong>Capstone:</strong> MN Room Collaboration Project
+          </p>
+        </div>
+
+        <!-- Course 2 -->
+        <div
+          class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition"
+        >
+          <div class="flex items-center space-x-4 mb-4">
+            <div
+              class="w-12 h-12 rounded-full bg-amber-100 flex items-center justify-center"
+            >
+              <span class="text-amber-500 font-bold text-lg">D</span>
+            </div>
+            <h4 class="text-xl font-semibold text-gray-900">
+              Digitalent Scholarship
+            </h4>
+          </div>
+          <p class="text-gray-600 mb-3">2020 – Web Fundamentals</p>
+          <p class="text-gray-700 text-sm">
+            Studied: HTML5, CSS3, Box Model, Flexbox, Grid, Advanced Selectors.
+          </p>
+          <p class="mt-3 text-gray-600 text-sm">
+            <strong>Project:</strong> Landing Page (AUTOROOM)
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <section class="bg-gray-100 py-16">
+      <div class="container mx-auto grid md:grid-cols-3 gap-8 text-center">
+        <div>
+          <p class="text-4xl font-bold text-rose-500">+5</p>
+          <p class="text-gray-700">Years Experience</p>
+        </div>
+        <div>
+          <p class="text-4xl font-bold text-sky-500">+20</p>
+          <p class="text-gray-700">Projects Completed</p>
+        </div>
+        <div>
+          <p class="text-4xl font-bold text-amber-500">+10</p>
+          <p class="text-gray-700">Certifications</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS (Placeholder) ===== -->
+    <section id="projects" class="container mx-auto px-6 py-20">
+      <h3 class="text-3xl font-bold text-center mb-12">Projects</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div
+          class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition"
+        >
+          <h4 class="text-lg font-semibold text-gray-900">Project 1</h4>
+          <p class="text-gray-600 text-sm mt-2">
+            Short description of the project goes here.
+          </p>
+        </div>
+        <div
+          class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition"
+        >
+          <h4 class="text-lg font-semibold text-gray-900">Project 2</h4>
+          <p class="text-gray-600 text-sm mt-2">
+            Short description of the project goes here.
+          </p>
+        </div>
+        <div
+          class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition"
+        >
+          <h4 class="text-lg font-semibold text-gray-900">Project 3</h4>
+          <p class="text-gray-600 text-sm mt-2">
+            Short description of the project goes here.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
     <!-- footer Section -->
-    <section id="footer" class="py-[50px] px-[50px]">
+    <!-- <section id="footer" class="py-[50px] px-[50px]">
         <div class="containers flex justify-between ">
             <div class="flex flex-col items-center">
                 <img src="/Project/dewiWulandari/assets/wanda-logo.png" alt="logo" class="w-[60px] h-auto" />
@@ -194,8 +326,85 @@
             </div>
 
         </div>
-    </section>
+    </section> -->
 
-    <footer class="bg-rose-950 text-center text-white">
-        &copy; 2025 W A N D A . All rights reserved.
+    <footer
+      class="bg-gradient-to-r from-slate-900 via-[#0f172a] to-slate-900 pt-10"
+    >
+      <div
+        class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-start gap-10"
+      >             
+        <!-- Logo -->
+         <div class="flex flex-col items-center md:items-start space-y-4">
+      <img src="/Project/dewiWulandari/assets/wanda-logo.png" alt="logo" class="w-[60px] h-auto rounded-lg shadow-lg" />
+
+      <div class="flex space-x-4">
+        <!-- Instagram -->
+        <a href="#" class="p-2 rounded-full bg-gradient-to-r from-pink-400 to-teal-400 text-white hover:scale-110 transition">
+          <img src="/Project/dewiWulandari/assets/Instagram.png" alt="instagram" class="w-[25px] h-auto" />
+        </a>
+        <!-- Facebook -->
+        <a href="#" class="p-2 rounded-full bg-gradient-to-r from-pink-400 to-teal-400 text-white hover:scale-110 transition">
+          <img src="/Project/dewiWulandari/assets/Facebook.png" alt="facebook" class="w-[25px] h-auto" />
+        </a>
+        <!-- X (Twitter) -->
+        <a href="#" class="p-2 rounded-full bg-gradient-to-r from-pink-400 to-teal-400 text-white hover:scale-110 transition">
+          <img src="/Project/dewiWulandari/assets/x.png" alt="x" class="w-[25px] h-auto" />
+        </a>
+        <!-- Discord -->
+        <a href="#" class="p-2 rounded-full bg-gradient-to-r from-pink-400 to-teal-400 text-white hover:scale-110 transition">
+         <img src="/Project/dewiWulandari/assets/Discord.png" alt="discord" class="w-[25px] h-auto" />
+        </a>
+        <!-- LinkedIn -->
+        <a href="#" class="p-2 rounded-full bg-gradient-to-r from-pink-400 to-teal-400 text-white hover:scale-110 transition">
+          <img src="/Project/dewiWulandari/assets/Linkedin.png" alt="linkedin" class="w-[25px] h-auto" />
+        </a>
+        <!-- GitHub -->
+        <a href="#" class="p-2 rounded-full bg-gradient-to-r from-pink-400 to-teal-400 text-white hover:scale-110 transition">
+          <img src="/Project/dewiWulandari/assets/Github.png" alt="github" class="w-[25px] h-auto" />
+        </a>
+      </div>
+    </div>
+
+        <!-- Links -->
+        <div>
+          <h3 class="text-rose-500 font-semibold mb-4 tracking-wide">Links</h3>
+          <ul class="space-y-2 text-slate-300">
+            <li>
+              <a href="#" class="hover:text-rose-400 transition-colors"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-rose-400 transition-colors"
+                >Academic</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-rose-400 transition-colors"
+                >Courses</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="text-rose-500 font-semibold mb-4 tracking-wide">
+            Get In Touch
+          </h3>
+          <p class="text-slate-300">dewi.wulandari.ruslan@gmail.com</p>
+          <p class="text-slate-300">+62 82 3344 26054</p>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="bg-rose-950 py-2 mt-10">
+        <p class="text-center text-slate-200 text-sm tracking-wide">
+          © 2025 <span class="font-bold">W A N D A</span>. All rights reserved.
+        </p>
+      </div>
     </footer>
+
+  </body>
+</html>
