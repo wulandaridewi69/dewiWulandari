@@ -19,15 +19,9 @@ npm run start    # serve the production build
 npm run lint     # ESLint
 ```
 
-> **Windows note:** the project lives under `...\HTML & CSS\...`. The `&` and
-> spaces in that path break npm's `.cmd` shims on some shells, so
-> `npm run <script>` may fail with a `MODULE_NOT_FOUND` error. If that happens,
-> run the underlying command directly instead:
->
-> ```powershell
-> node ".\node_modules\next\dist\bin\next" dev
-> node ".\node_modules\eslint\bin\eslint.js" .
-> ```
+The scripts invoke `node` directly instead of relying on npm's `.bin`
+shims, so they also work from folders whose path contains `&` or
+spaces (such as this one).
 
 ## Project structure
 
