@@ -1,0 +1,103 @@
+@import 'tailwindcss';
+
+/* ------------------------------------------------------------------
+   Design tokens
+   Monochrome (neutral) base + rose accent, in the spirit of Vercel.
+------------------------------------------------------------------- */
+@theme inline {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
+
+  --radius-4xl: 2rem;
+
+  --animate-marquee: marquee 40s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+/* ------------------------------------------------------------------
+   Base
+------------------------------------------------------------------- */
+@layer base {
+  * {
+    border-color: var(--color-neutral-200);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    /* offset anchor targets so the sticky header never covers them */
+    scroll-padding-top: 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-white);
+    color: var(--color-neutral-900);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: var(--color-neutral-900);
+    color: var(--color-white);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-neutral-900);
+    outline-offset: 2px;
+  }
+
+  /* Respect users who prefer less motion. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* ------------------------------------------------------------------
+   Utilities
+------------------------------------------------------------------- */
+@utility grid-bg {
+  background-image:
+    linear-gradient(to right, var(--color-neutral-200) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--color-neutral-200) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+@utility grid-bg-dark {
+  background-image:
+    linear-gradient(to right, rgb(255 255 255 / 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255 255 255 / 0.06) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+@utility mask-fade-b {
+  mask-image: linear-gradient(to bottom, black 0%, black 40%, transparent 100%);
+}
+
+@utility mask-fade-x {
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 12%,
+    black 88%,
+    transparent 100%
+  );
+}
